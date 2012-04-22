@@ -1,0 +1,164 @@
+@import compass/reset
+@import "compass"
+
+.holder
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif
+  position: relative
+  .transform
+    position: fixed
+    height: 100%
+    width: 100%
+    .screen
+      margin: auto
+      position: relative
+      height: 100%
+      width: 100%
+      text-align: center
+      .dot
+        position: absolute
+        +border-radius(1000px)
+        .inner-dot
+          position: absolute
+          +border-radius(1000px)
+      .caption
+        text-align: left
+        font-weight: bold
+        z-index: 50
+        position: absolute
+        width: 100%
+        font-size: 50px
+        color: #ddd
+        display: inline-block
+        .smaller
+          line-height: 1em
+          display: inline-block
+          padding-top: 1em
+          b
+            display: inline-block
+            line-height: 1em
+            color: rgb(39, 39, 40)
+      .bottom
+        width: 100%
+        position: absolute
+        bottom: 40px
+        z-index: 100
+        .next-page
+          display: inline-block
+          width: 50px
+          height: 50px
+          background: url('/static/arrow_down.png')
+          margin: auto
+
+          &:hover 
+            cursor: pointer
+            background: url('/static/arrow_down_hover.png')
+      .coursekit-logo
+        position: absolute
+        top: -500px
+        z-index: 50
+        +opacity(0)
+      .lore-logo
+        position: absolute
+        +opacity(0)
+        z-index: 50
+        &.visible
+          +opacity(1)
+        
+.borderradius.opacity
+  .dot
+    display: block
+.dot
+  display: none
+
+.social
+  +box-sizing(border-box)
+  padding: 0 20px
+  position: absolute
+  bottom: 0
+  width: 100%
+  text-align: center
+  z-index: 101
+  +opacity(0)
+  +transition(opacity 1s 0s)
+  &.visible
+    +opacity(1)
+    +transition(opacity 1s 2s)
+
+  a
+    font-weight: bold
+    color: #ddd
+    text-decoration: none
+    &:hover
+      color: rgb(26, 23, 24)
+      cursor: pointer
+
+  .visit
+    font-size: 30px
+
+  .beneath
+    font-size: 20px
+    height: 100px
+    .section
+      float: left
+      margin-right: 5px
+      .flag
+        display: none
+        padding: 3px 8px
+        font-size: 12px
+        background: #eee
+        color: rgb(26, 23, 24)
+        position: relative
+        margin-bottom: 20px
+        .arrow
+          display: block
+          margin: auto
+          width: 0
+          height: 0
+          border: 10px solid 
+          border-color: #eee transparent transparent transparent
+          position: absolute
+          bottom: -20px
+      .icon 
+        width: 32px
+        height: 32px
+      margin-top: 45px
+      &:hover
+        margin-top: 3px
+
+        .flag
+          display: inline-block
+        &.twitter
+          .twitter-icon
+            background: url(/static/twitter_hover.png)
+        &.facebook
+          .facebook-icon
+            background: url(/static/fb_hover.png)
+
+      &.github
+        width: 90px
+        padding-top: 6px
+        .arrow
+          left: 14px
+      &.twitter
+        width: 50px
+        .twitter-icon
+          margin-left: 10px
+          background: url(/static/twitter.png)
+        .arrow
+          left: 17px
+      &.facebook
+        width: 50px
+        .facebook-icon
+          margin-left: 6px 
+          background: url(/static/fb.png)
+      &.jobs
+        margin-right: 0
+        padding-top: 6px
+        width: 100px
+        .arrow
+          left: 35px
+    .left
+      float: left
+    .right
+      width: 210px
+      float: right

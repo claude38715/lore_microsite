@@ -1,0 +1,323 @@
+/* line 17, /Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 20, /Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+}
+
+/* line 22, /Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 24, /Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 26, /Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 28, /Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 101, /Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 30, /Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 114, /Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 4, /Users/jim/programs/lore_microsite/style/sass/microsite.sass */
+.holder {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  position: relative;
+}
+/* line 7, /Users/jim/programs/lore_microsite/style/sass/microsite.sass */
+.holder .transform {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+/* line 11, /Users/jim/programs/lore_microsite/style/sass/microsite.sass */
+.holder .transform .screen {
+  margin: auto;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+/* line 17, /Users/jim/programs/lore_microsite/style/sass/microsite.sass */
+.holder .transform .screen .dot {
+  position: absolute;
+  -webkit-border-radius: 1000px;
+  -moz-border-radius: 1000px;
+  -ms-border-radius: 1000px;
+  -o-border-radius: 1000px;
+  border-radius: 1000px;
+}
+/* line 20, /Users/jim/programs/lore_microsite/style/sass/microsite.sass */
+.holder .transform .screen .dot .inner-dot {
+  position: absolute;
+  -webkit-border-radius: 1000px;
+  -moz-border-radius: 1000px;
+  -ms-border-radius: 1000px;
+  -o-border-radius: 1000px;
+  border-radius: 1000px;
+}
+/* line 23, /Users/jim/programs/lore_microsite/style/sass/microsite.sass */
+.holder .transform .screen .caption {
+  text-align: left;
+  font-weight: bold;
+  z-index: 50;
+  position: absolute;
+  width: 100%;
+  font-size: 50px;
+  color: #dddddd;
+  display: inline-block;
+}
+/* line 32, /Users/jim/programs/lore_microsite/style/sass/microsite.sass */
+.holder .transform .screen .caption .smaller {
+  line-height: 1em;
+  display: inline-block;
+  padding-top: 1em;
+}
+/* line 36, /Users/jim/programs/lore_microsite/style/sass/microsite.sass */
+.holder .transform .screen .caption .smaller b {
+  display: inline-block;
+  line-height: 1em;
+  color: #272728;
+}
+/* line 40, /Users/jim/programs/lore_microsite/style/sass/microsite.sass */
+.holder .transform .screen .bottom {
+  width: 100%;
+  position: absolute;
+  bottom: 40px;
+  z-index: 100;
+}
+/* line 45, /Users/jim/programs/lore_microsite/style/sass/microsite.sass */
+.holder .transform .screen .bottom .next-page {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: url("/static/arrow_down.png");
+  margin: auto;
+}
+/* line 52, /Users/jim/programs/lore_microsite/style/sass/microsite.sass */
+.holder .transform .screen .bottom .next-page:hover {
+  cursor: pointer;
+  background: url("/static/arrow_down_hover.png");
+}
+/* line 55, /Users/jim/programs/lore_microsite/style/sass/microsite.sass */
+.holder .transform .screen .coursekit-logo {
+  position: absolute;
+  top: -500px;
+  z-index: 50;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+/* line 60, /Users/jim/programs/lore_microsite/style/sass/microsite.sass */
+.holder .transform .screen .lore-logo {
+  position: absolute;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  z-index: 50;
+}
+/* line 64, /Users/jim/programs/lore_microsite/style/sass/microsite.sass */
+.holder .transform .screen .lore-logo.visible {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+/* line 68, /Users/jim/programs/lore_microsite/style/sass/microsite.sass */
+.borderradius.opacity .dot {
+  display: block;
+}
+
+/* line 70, /Users/jim/programs/lore_microsite/style/sass/microsite.sass */
+.dot {
+  display: none;
+}
+
+/* line 73, /Users/jim/programs/lore_microsite/style/sass/microsite.sass */
+.social {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 20px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 101;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -webkit-transition: opacity 1s 0s;
+  -moz-transition: opacity 1s 0s;
+  -ms-transition: opacity 1s 0s;
+  -o-transition: opacity 1s 0s;
+  transition: opacity 1s 0s;
+}
+/* line 83, /Users/jim/programs/lore_microsite/style/sass/microsite.sass */
+.social.visible {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+  -webkit-transition: opacity 1s 2s;
+  -moz-transition: opacity 1s 2s;
+  -ms-transition: opacity 1s 2s;
+  -o-transition: opacity 1s 2s;
+  transition: opacity 1s 2s;
+}
+/* line 87, /Users/jim/programs/lore_microsite/style/sass/microsite.sass */
+.social a {
+  font-weight: bold;
+  color: #dddddd;
+  text-decoration: none;
+}
+/* line 91, /Users/jim/programs/lore_microsite/style/sass/microsite.sass */
+.social a:hover {
+  color: #1a1718;
+  cursor: pointer;
+}
+/* line 95, /Users/jim/programs/lore_microsite/style/sass/microsite.sass */
+.social .visit {
+  font-size: 30px;
+}
+/* line 98, /Users/jim/programs/lore_microsite/style/sass/microsite.sass */
+.social .beneath {
+  font-size: 20px;
+  height: 100px;
+}
+/* line 101, /Users/jim/programs/lore_microsite/style/sass/microsite.sass */
+.social .beneath .section {
+  float: left;
+  margin-right: 5px;
+  margin-top: 45px;
+}
+/* line 104, /Users/jim/programs/lore_microsite/style/sass/microsite.sass */
+.social .beneath .section .flag {
+  display: none;
+  padding: 3px 8px;
+  font-size: 12px;
+  background: #eeeeee;
+  color: #1a1718;
+  position: relative;
+  margin-bottom: 20px;
+}
+/* line 112, /Users/jim/programs/lore_microsite/style/sass/microsite.sass */
+.social .beneath .section .flag .arrow {
+  display: block;
+  margin: auto;
+  width: 0;
+  height: 0;
+  border: 10px solid;
+  border-color: #eeeeee transparent transparent transparent;
+  position: absolute;
+  bottom: -20px;
+}
+/* line 121, /Users/jim/programs/lore_microsite/style/sass/microsite.sass */
+.social .beneath .section .icon {
+  width: 32px;
+  height: 32px;
+}
+/* line 125, /Users/jim/programs/lore_microsite/style/sass/microsite.sass */
+.social .beneath .section:hover {
+  margin-top: 3px;
+}
+/* line 128, /Users/jim/programs/lore_microsite/style/sass/microsite.sass */
+.social .beneath .section:hover .flag {
+  display: inline-block;
+}
+/* line 131, /Users/jim/programs/lore_microsite/style/sass/microsite.sass */
+.social .beneath .section:hover.twitter .twitter-icon {
+  background: url(/static/twitter_hover.png);
+}
+/* line 134, /Users/jim/programs/lore_microsite/style/sass/microsite.sass */
+.social .beneath .section:hover.facebook .facebook-icon {
+  background: url(/static/fb_hover.png);
+}
+/* line 137, /Users/jim/programs/lore_microsite/style/sass/microsite.sass */
+.social .beneath .section.github {
+  width: 90px;
+  padding-top: 6px;
+}
+/* line 140, /Users/jim/programs/lore_microsite/style/sass/microsite.sass */
+.social .beneath .section.github .arrow {
+  left: 14px;
+}
+/* line 142, /Users/jim/programs/lore_microsite/style/sass/microsite.sass */
+.social .beneath .section.twitter {
+  width: 50px;
+}
+/* line 144, /Users/jim/programs/lore_microsite/style/sass/microsite.sass */
+.social .beneath .section.twitter .twitter-icon {
+  margin-left: 10px;
+  background: url(/static/twitter.png);
+}
+/* line 147, /Users/jim/programs/lore_microsite/style/sass/microsite.sass */
+.social .beneath .section.twitter .arrow {
+  left: 17px;
+}
+/* line 149, /Users/jim/programs/lore_microsite/style/sass/microsite.sass */
+.social .beneath .section.facebook {
+  width: 50px;
+}
+/* line 151, /Users/jim/programs/lore_microsite/style/sass/microsite.sass */
+.social .beneath .section.facebook .facebook-icon {
+  margin-left: 6px;
+  background: url(/static/fb.png);
+}
+/* line 154, /Users/jim/programs/lore_microsite/style/sass/microsite.sass */
+.social .beneath .section.jobs {
+  margin-right: 0;
+  padding-top: 6px;
+  width: 100px;
+}
+/* line 158, /Users/jim/programs/lore_microsite/style/sass/microsite.sass */
+.social .beneath .section.jobs .arrow {
+  left: 35px;
+}
+/* line 160, /Users/jim/programs/lore_microsite/style/sass/microsite.sass */
+.social .beneath .left {
+  float: left;
+}
+/* line 162, /Users/jim/programs/lore_microsite/style/sass/microsite.sass */
+.social .beneath .right {
+  width: 210px;
+  float: right;
+}
