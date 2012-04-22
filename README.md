@@ -7,7 +7,7 @@ The entire source is in src/animation.coffee. Given the explanation below, it sh
 
 A "page" of the animation consists of a list of `shapes` and a text blob.
 
-A `shape` is a list of dictionaries of the form `{get_points: (time, dtim, elapsed_time) -> ...}`, where time is the time the current frame was triggered, dtim is the time in ms since the last time a frame was rendered, and elapsed_time is the time elapsed since the current page was rendered. 
+A `shape` is a list of dictionaries of the form `{get_points: (time, dtim, elapsed_time) -> ...}`, where time is the time the current frame was triggered, dtim is the time since the last time a frame was rendered, and elapsed_time is the time elapsed since the current page was rendered. 
 
 Calling `get_points` must return a list of `points`, where a `point` is a dictionary of the form:
 
@@ -15,9 +15,9 @@ Calling `get_points` must return a list of `points`, where a `point` is a dictio
     position: # The position on the screen
         x: ...
         y: ...
-    color: [red, green, blue] # The displayed radius
+    color: [red, green, blue] # The displayed color
     radius: ... # The displayed radius
-    background_image: # Show an image on the dot
+    background_image: # Show an image on the dot - null to show a solid color instead
         image: ... # A url to an image file
         position:  # The position of the background image on the screen
             x: ...
