@@ -31,6 +31,8 @@ app = http.createServer (request, response) ->
             contentType = 'image/gif'
         when '.otf'
             contentType = 'application/x-font-opentype'
+        when '.svg'
+            contentType = 'image/svg+xml'            
         when '.ttf'
             contentType = 'application/x-font-truetype'
 

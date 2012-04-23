@@ -46,12 +46,36 @@
           display: inline-block
           width: 50px
           height: 50px
-          background: url('/static/arrow_down.png')
+          background: url('/microsite_static/arrow_down.png')
           margin: auto
 
           &:hover 
             cursor: pointer
-            background: url('/static/arrow_down_hover.png')
+            background: url('/microsite_static/arrow_down_hover.png')
+          &.up
+            background: url('/microsite_static/arrow_down.png')
+          &:hover 
+            cursor: pointer
+      .top
+        width: 100%
+        position: absolute
+        top: 40px
+        z-index: 100
+        .first-page
+          width: 50px
+          height: 50px
+          background: url('/microsite_static/arrow_up.png')
+          margin: auto
+          +transition(opacity 1s 0s)
+          +opacity(0)
+
+          &.visible
+            display: block
+            +transition(opacity 2s 2s)
+            +opacity(1)
+          &:hover 
+            cursor: pointer
+            background: url('/microsite_static/arrow_up_hover.png')
       .coursekit-logo
         position: absolute
         top: -500px
@@ -100,7 +124,6 @@
     height: 100px
     .section
       float: left
-      margin-right: 5px
       .flag
         display: none
         padding: 3px 8px
@@ -124,33 +147,28 @@
       margin-top: 45px
       &:hover
         margin-top: 3px
-
         .flag
           display: inline-block
         &.twitter
           .twitter-icon
-            background: url(/static/twitter_hover.png)
-        &.facebook
-          .facebook-icon
-            background: url(/static/fb_hover.png)
-
+            background: url(/microsite_static/twitter_hover.png)
       &.github
         width: 90px
         padding-top: 6px
         .arrow
           left: 14px
+      &.design
+        width: 215px
+        padding-top: 6px
+        .arrow
+          left: 40px
       &.twitter
         width: 50px
         .twitter-icon
           margin-left: 10px
-          background: url(/static/twitter.png)
+          background: url(/microsite_static/twitter.png)
         .arrow
           left: 17px
-      &.facebook
-        width: 50px
-        .facebook-icon
-          margin-left: 6px 
-          background: url(/static/fb.png)
       &.jobs
         margin-right: 0
         padding-top: 6px
@@ -160,5 +178,5 @@
     .left
       float: left
     .right
-      width: 210px
+      width: 155px
       float: right

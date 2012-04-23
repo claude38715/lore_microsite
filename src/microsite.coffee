@@ -1,55 +1,47 @@
 ###
-MMMMMMMMMMMMMMMMMMMMMMMMMMMMOZZZZZZZZZZZZZZZZZZZZZODMMMMMMMMMMMMMMMMMMMMMMMMMMMM
-MMMMMMMMMMMMMMMMMMMMMMMMZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ8MMMMMMMMMMMMMMMMMMMMMMMM
-MMMMMMMMMMMMMMMMMMMMMZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZOMMMMMMMMMMMMMMMMMMMMM
-MMMMMMMMMMMMMMMMMMOZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZNMMMMMMMMMMMMMMMMMM
-MMMMMMMMMMMMMMMMZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZDMMMMMMMMMMMMMMMM
-MMMMMMMMMMMMMM$ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZNMMMMMMMMMMMMMM
-MMMMMMMMMMMMOZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZMMMMMMMMMMMMM
-MMMMMMMMMMMZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZMMMMMMMMMMM
-MMMMMMMMMDZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZMMMMMMMMMM
-MMMMMMMMZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZNMMMMMMMM
-MMMMMMMZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ$I+=?ZZZZZZZZZZZZZZZZZZ8MMMMMMM
-MMMMMMZZZZZZZZZZZZ...........ZZZZZZZZZZZZZZZZZ,...........ZZZZZZZZZZZZZZZOMMMMMM
-MMMMMZZZZZZZZZZZZZ...........ZZZZZZZZZZZZZZZ=.....=II=......ZZZZZZZZZZZZZZNMMMMM
-MMMMZZZZZZZZZZZZZZZZZ...ZZZZZZZZZZZZZZZZZZZ....ZZZZZZZZZZ....ZZZZZZZZZZZZZZMMMMM
-MMMDZZZZZZZZZZZZZZZZZ...ZZZZZZZZZZZZZZZZZZ~...ZZZZZZZZZZZZ. ..ZZZZZZZZZZZZZZMMMM
-MMMZZZZZZZZZZZZZZZZZZ...ZZZZZZZZZZZZZZZZZZ ..ZZZZZZZZZZZZZZ...$ZZZZZZZZZZZZZZMMM
-MMZZZZZZZZZZZZZZZZZZZ...ZZZZZZZZZZZZZZZZZZ...ZZZZZZZZZZZZZZ=..+ZZZZZZZZZZZZZZDMM
-MMZZZZZZZZZZZZZZZZZZZ...ZZZZZZZZZZZZZZZZZZ...ZZZZZZZZZZZZZZ?..+ZZZZZZZZZZZZZZZMM
-MZZZZZZZZZZZZZZZZZZZZ...ZZZZZZZZZZZZZZZZZZ...OZZZZZZZZZZZZZ...ZZZZZZZZZZZZZZZZMM
-MZZZZZZZZZZZZZZZZZZZZ...ZZZZZZZZZZ...$ZZZZ...,ZZZZZZZZZZZZ?...ZZZZZZZZZZZZZZZZOM
-MZZZZZZZZZZZZZZZZZZZZ...ZZZZZZZZZZ. .ZZZZZZ.. .ZZZZZZZZZZ,...ZZZZZZZZZZZZZZZZZZM
-OZZZZZZZZZZZZZZZZZZZZ...ZZZZZZZZZZ...ZZZZZZZ.....$ZZZZZ.....OZZZZZZZZZZZZZZZZZZM
-ZZZZZZZZZZZZZZZZZZ...................ZZZZZZZZ$............+ZZZZZZZZZZZZZZZZZZZZD
-ZZZZZZZZZZZZZZZZZZ?+++++++++++++++++?ZZZZZZZZZZZ7:....,IZZZZZZZZZZZZZZZZZZZZZZZO
-ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
-ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
-ZZZZZZZZZZZZZZZZZOZZZZZZZZZZZZZZZZZZZZZZZOZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZO
-ZZZZZZZZZZZZZZZZZZ................ ~ZZZZZZ......... .........ZZZZZZZZZZZZZZZZZZD
-OZZZZZZZZZZZZZZZZZ...................ZZZZZ...................ZZZZZZZZZZZZZZZZZZM
-MZZZZZZZZZZZZZZZZZZZZ...ZZZZZZZZZZ...=ZZZZZZZ,..:ZZZZZZZZZ...ZZZZZZZZZZZZZZZZZZM
-MZZZZZZZZZZZZZZZZZZZZ...ZZZZZZZZZZ7 .,ZZZZZZZ,..:ZZZZZZZZZ...ZZZZZZZZZZZZZZZZZOM
-MZZZZZZZZZZZZZZZZZZZZ...ZZZZZZZZZZ...=ZZZZZZZ,..:ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZMM
-MMZZZZZZZZZZZZZZZZZZZ................ZZZZZZZZ,.......7ZZZZZZZZZZZZZZZZZZZZZZZZMM
-MMZZZZZZZZZZZZZZZZZZZ..............+ZZZZZZZZZ,.......7ZZZZZZZZZZZZZZZZZZZZZZZNMM
-MMMZZZZZZZZZZZZZZZZZZ...ZZZZ....ZZZZZZZZZZZZZ,..:ZZZZZZZZZZZZZZZZZZZZZZZZZZZZMMM
-MMM8ZZZZZZZZZZZZZZZZZ...ZZZZZ,...ZZZZZZZZZZZZ,..:ZZZZZZZZZ...ZZZZZZZZZZZZZZZMMMM
-MMMMZZZZZZZZZZZZZZZZZ...ZZZZZZ,...ZZZZZZZZZZZ...:ZZZZZZZZZ...ZZZZZZZZZZZZZZMMMMM
-MMMMMZZZZZZZZZZZZZ......ZZZZZZZ,......ZZZZ...................ZZZZZZZZZZZZZNMMMMM
-MMMMMNZZZZZZZZZZZZ......ZZZZZZZZ......ZZZZ...................ZZZZZZZZZZZZZMMMMMM
-MMMMMMMZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ8MMMMMMM
-MMMMMMMMZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZNMMMMMMMM
-MMMMMMMMMDZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZMMMMMMMMMM
-MMMMMMMMMMMZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZMMMMMMMMMMM
-MMMMMMMMMMMMOZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZMMMMMMMMMMMMM
-MMMMMMMMMMMMMMZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZDMMMMMMMMMMMMMM
-MMMMMMMMMMMMMMMMZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZDMMMMMMMMMMMMMMMM
-MMMMMMMMMMMMMMMMMMOZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZNMMMMMMMMMMMMMMMMMM
-MMMMMMMMMMMMMMMMMMMMMZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZMMMMMMMMMMMMMMMMMMMMM
-MMMMMMMMMMMMMMMMMMMMMMMMZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ8MMMMMMMMMMMMMMMMMMMMMMMM
-MMMMMMMMMMMMMMMMMMMMMMMMMMMM8ZZZZZZZZZZZZZZZZZZZZZO8MMMMMMMMMMMMMMMMMMMMMMMMMMMM
-MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMN8ZZZZZODMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+
+                            cccccccccccccccccccccc                             
+                       ccccccccccccccccccccccccccccccccc                       
+                   ccccccccccccccccccccccccccccccccccccccccc                   
+                ccccccccccccccccccccccccccccccccccccccccccccccc                
+             cccccccccccccccccccccccccccccccccccccccccccccccccccc              
+           cccccccccccccccccccccccccccccccccccccccccccccccccccccccc            
+         cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc          
+        ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc        
+      ccccccccccccccccccccccccccccccccccccccccccc     cccccccccccccccccc       
+     ccccccccccccc           cccccccccccccccc             cccccccccccccccc     
+    ccccccccccccccccc   ccccccccccccccccccc     cccccccc    ccccccccccccccc    
+   cccccccccccccccccc   cccccccccccccccccc    cccccccccccc   ccccccccccccccc   
+  ccccccccccccccccccc   cccccccccccccccccc   cccccccccccccc   cccccccccccccc   
+ cccccccccccccccccccc   ccccccccccccccccc   ccccccccccccccc   ccccccccccccccc  
+ cccccccccccccccccccc   cccccccccccccccccc   cccccccccccccc   cccccccccccccccc 
+ccccccccccccccccccccc   cccccccccc   ccccc    cccccccccccc   ccccccccccccccccc 
+ccccccccccccccccccccc   cccccccccc   cccccc     cccccccc    cccccccccccccccccc 
+cccccccccccccccccc                   cccccccc             ccccccccccccccccccccc
+cccccccccccccccccccccccccccccccccccccccccccccccccc    ccccccccccccccccccccccccc
+ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+cccccccccccccccccc                 ccccccc                  ccccccccccccccccccc
+ccccccccccccccccccccc   ccccccccc    cccccccc   ccccccccc   cccccccccccccccccc 
+ccccccccccccccccccccc   ccccccccccc  cccccccc   ccccccccc   cccccccccccccccccc 
+ cccccccccccccccccccc   cccccccccc   cccccccc   cccccccccccccccccccccccccccccc 
+ cccccccccccccccccccc               ccccccccc        cccccccccccccccccccccccc  
+  ccccccccccccccccccc   cccc    ccccccccccccc   cccccccccccccccccccccccccccc   
+   cccccccccccccccccc   ccccc    cccccccccccc   ccccccccc   cccccccccccccccc   
+    ccccccccccccccccc   ccccccc   ccccccccccc   ccccccccc   ccccccccccccccc    
+     ccccccccccccc      cccccccc     ccccc                  cccccccccccccc     
+      cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc       
+        ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc        
+         cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc          
+           cccccccccccccccccccccccccccccccccccccccccccccccccccccccc            
+             cccccccccccccccccccccccccccccccccccccccccccccccccccc              
+                ccccccccccccccccccccccccccccccccccccccccccccccc                
+                   ccccccccccccccccccccccccccccccccccccccccc                   
+                       ccccccccccccccccccccccccccccccccc                       
+                            cccccccccccccccccccccc            
+
+
+We're hiring awesome people to build awesome things (like this) - http://lore.com/jobs                            
 
 Developed by: Jim Grandpre (@jimtla)
 Designed by: Matt Delbridge (@matt_delbridge), Aaron Carambula (@carambula), Joseph Cohen (@josephcohen)
@@ -225,6 +217,8 @@ class Dot
 $ ->
     screen = $('.screen')
 
+    console.log $('html').attr 'class'
+
     ck_logo_start = -> minor_dimension * .1
 
     dots = []
@@ -258,10 +252,12 @@ $ ->
             social.addClass 'visible'
             lore_logo.addClass 'visible'
             next_page_button.fadeOut 500
+            first_page_button.addClass 'visible'
         else
             social.removeClass 'visible'
             lore_logo.removeClass 'visible'
             next_page_button.fadeIn 500
+            first_page_button.removeClass 'visible'
 
         these_dots = _.clone(dots)
         dots = 
@@ -353,7 +349,7 @@ $ ->
                     background_image: 
                         position: logo_position
                         size: size
-                        image: '/static/coursekit_logo.png'                   
+                        image: '/microsite_static/coursekit_logo.png'                   
                 else
                     size = .15
                     grid = 4
@@ -369,7 +365,7 @@ $ ->
                     background_image: 
                         position: logo_position
                         size: size
-                        image: '/static/coursekit_logo.png'
+                        image: '/microsite_static/coursekit_logo.png'
 
 
 
@@ -417,7 +413,7 @@ $ ->
                         p.outer_opacity -= .01
                     else 
                         if p.radius < .32
-                            p.radius += .1
+                            p.radius += .2
                         p.orbitx -= .1
                         p.orbity -= .1
                         p.orbitx = Math.max(0, p.orbitx)
@@ -430,8 +426,8 @@ $ ->
                     p.orbitx += random()*.01
                     p.orbity += random()*.01
 
-                if grow and p.radius < .5 and time % 4 == 0
-                    p.radius += Math.random() * .003
+                if grow and p.radius < .15 and time % 4 == 0
+                    p.radius += Math.random() * .001
 
                 p.position = 
                     x: clump_position.x + p.orbitx * Math.cos(p.ang)
@@ -655,8 +651,8 @@ $ ->
         {shapes: [ck_logo_shape()], text: '<span class="smaller"><b>Coursekit is now Lore.<br>Same Company, New Name.</b><br>This is why we made the change.</span>'}
         {shapes: [decompose_ck()], text: 'Coursekit started<br>as a toolkit for<br>courses.'}
         {shapes: [clump({x: .4, y: .7}), clump({x: .1, y: .3}), clump({x: .8, y: .4})], text: 'Courses became<br>communities of<br>learners.'}
-        {shapes: [sharing({x: .5, y: .5})], text: 'People learn<br>by sharing.'}
-        {shapes: [infinity({x: .5, y: .5})], text: 'Our mission is to<br>empower people to<br>share knowledge.'}
+        {shapes: [sharing({x: .5, y: .5})], text: 'We&rsquo;ve seen<br>that people learn<br>by sharing.'}
+        {shapes: [infinity({x: .5, y: .5})], text: 'Our mission is to<br>connect the world&rsquo;s<br>learners and<br>educators.'}
         {shapes: [
             animated_circle
                 size: 10
@@ -678,12 +674,12 @@ $ ->
             ], text: 'We need a name<br>that reflects our<br>ambitions.'}
         {shapes: [
             tree()
-            ], text: 'Lore means<br>knowledge, ideas,<br>thought, shared<br>between people.'}           
+            ], text: 'Lore means<br>knowledge shared<br>between people.'}           
         {shapes: [
             clump({x: .5, y: .5}, 42, [225, 15, 23], {constant: .03, varience: 50}, .4, .06)
-            ], text: "That's what we<br>are about."}                      
+            ], text: "That&rsquo;s what we<br>are about."}                      
         {shapes: [
-            clump({x: .5, y: .5}, 42, [225, 15, 23], {constant: .04, varience: 50}, .2, .04, true, {image: '/static/lore_logo.png', position: {x: .5, y: .5}, size: .3}, .3)
+            clump({x: .5, y: .5}, 42, [225, 15, 23], {constant: .04, varience: 50}, .4, .04, true, {image: '/microsite_static/lore_logo.png', position: {x: .5, y: .5}, size: .3}, .3)
             ], text: ""}
     ]
 
@@ -711,7 +707,7 @@ $ ->
     page_height = 0
     $(window).resize ->
         browser_height = $(window).height()
-        page_height = browser_height * 3
+        page_height = browser_height * 5
         browser_width = $(window).width()
 
         minor_dimension = Math.min(browser_width, browser_height)
@@ -781,21 +777,27 @@ $ ->
         for {node, position} in text_blocks
             target = page_height * position - node.height()/3
             #node.css top: (target - scroll_top) * (target - scroll_top) * (target - scroll_top)
-            diff = (target - scroll_top)*.8/(page_height)
+            diff = (target - scroll_top)*.7/(page_height)
             sign = if diff > 0 then 1 else - 1
             node.css top: diff * diff * sign * page_height + minor_dimension/3
             #node.css top: (target - scroll_top) + page_height/3
         last_scroll = scroll_top
 
+    target_page = 0
+    last_mousewheel = 0
     $(window).bind 'mousewheel', (e, delta) ->
-        momentum = .01
+        console.log delta
+        now = +new Date()
+        if now - last_mousewheel < 1500 or Math.abs(delta) < .4
+            return
+        last_mousewheel = now
+
+        momentum = .8
         scroll_top = $(window).scrollTop() 
         if (delta) > 0
-            $(window).scrollTop scroll_top - browser_height*.005
-            scroll_momentum -= momentum
+            target_page = parseInt(scroll_top/page_height + .5) - 1
         else 
-            $(window).scrollTop scroll_top + browser_height*.005
-            scroll_momentum += momentum
+            target_page = parseInt(scroll_top/page_height + .5) + 1
         #scroll_momentum = Math.max(Math.min(scroll_momentum, .8), -.8)
         last_scroll_time = +new Date()
             
@@ -804,40 +806,69 @@ $ ->
 
     # Jump to next page with button or keyboard
     next_page_button = screen.find('.next-page').click ->
-        scroll_momentum += 1
+        scroll_top = $(window).scrollTop()
+        target_page = parseInt(scroll_top/page_height + .5) + 1
+        return false
+
+    first_page_button = screen.find('.first-page').click ->
+        target_page = 0
+        return false
+
+    screen.click ->
+        scroll_top = $(window).scrollTop() 
+        target_page = parseInt(scroll_top/page_height + .5) + 1
 
     $(document).bind 'keydown', (e) ->
         scroll_top = $(window).scrollTop() 
         if e.which in [37, 38]
-            scroll_momentum = -1
-            $(window).scrollTop scroll_top - browser_height*.002
+            target_page = parseInt(sroll_top/page_height + .5) - 1
             false
         else if e.which in [39, 40, 32, 13, 9]
-            scroll_momentum = 1
-            $(window).scrollTop scroll_top + browser_height*.002
+            target_page = parseInt(scroll_top/page_height + .5) + 1
             false
 
     # Handle the animation frames
     frame_count = 0
     otim = + new Date()
     start_time = null
+    last_below = null
+    scroll_paused = 0
+    last_sign = null
     do_frame = () ->
+        frame_count++
         time = +new Date()
         dtim = time - otim
         otim = time
 
-        # Spring physics to bring the scroll position towards a page
-        direction = if scroll_momentum > 0 then 1 else -1
-        target = parseInt(last_scroll/page_height + .5 + (direction * .4))
-        distance_to_target = target - last_scroll/page_height
-        scroll_momentum += distance_to_target * .08
+        if scroll_paused + 100 > time
+            scroll_momentum = 0
+        if frame_count % 1 == 0
+            last_scroll = $(window).scrollTop()
+            # Spring physics to bring the scroll position towards a page
+            direction = if scroll_momentum > 0 then 1 else -1
+            #target = parseInt(last_scroll/page_height + .5 + (direction * .4))
+            distance_to_target = target_page - last_scroll/page_height
+
+            sign = scroll_momentum/Math.abs(scroll_momentum)
+            last_sign = sign
 
 
-        # Move by the momentum
-        scroll_momentum *= .4
-        diff = scroll_momentum * browser_height * browser_height * .002
-        if parseInt(Math.abs(diff)) > 0
-            $(window).scrollTop last_scroll + diff
+            closest_below = parseInt(last_scroll/page_height)
+
+
+            scroll_momentum += distance_to_target * .08
+
+            if last_below? and last_below != closest_below
+                scroll_momentum = 0
+                scroll_paused = time
+            last_below = closest_below
+
+            # Move by the momentum
+            scroll_momentum *= .5
+            diff = scroll_momentum * browser_height * browser_height * .002
+            if parseInt(Math.abs(diff)) > 0
+                $(window).scrollTop last_scroll + diff
+
 
 
         if current_page != last_page
