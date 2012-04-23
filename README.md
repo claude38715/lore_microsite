@@ -1,7 +1,11 @@
 Lore Microsite
 =============
-
 A fancy microsite to announce our transition from Coursekit to Lore. View it live at http://lore.com/story
+
+Lore is hiring awesome people to build awesome things. [Join us](http://lore.com/jobs)
+
+Code Notes
+--------------
 
 The entire source is in src/animation.coffee. Given the explanation below, it should be pretty easy to follow.
 
