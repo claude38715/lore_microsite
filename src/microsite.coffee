@@ -1,47 +1,47 @@
 ###
 
-                            cccccccccccccccccccccc                             
-                       ccccccccccccccccccccccccccccccccc                       
-                   ccccccccccccccccccccccccccccccccccccccccc                   
-                ccccccccccccccccccccccccccccccccccccccccccccccc                
-             cccccccccccccccccccccccccccccccccccccccccccccccccccc              
-           cccccccccccccccccccccccccccccccccccccccccccccccccccccccc            
-         cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc          
-        ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc        
-      ccccccccccccccccccccccccccccccccccccccccccc     cccccccccccccccccc       
-     ccccccccccccc           cccccccccccccccc             cccccccccccccccc     
-    ccccccccccccccccc   ccccccccccccccccccc     cccccccc    ccccccccccccccc    
-   cccccccccccccccccc   cccccccccccccccccc    cccccccccccc   ccccccccccccccc   
-  ccccccccccccccccccc   cccccccccccccccccc   cccccccccccccc   cccccccccccccc   
- cccccccccccccccccccc   ccccccccccccccccc   ccccccccccccccc   ccccccccccccccc  
- cccccccccccccccccccc   cccccccccccccccccc   cccccccccccccc   cccccccccccccccc 
-ccccccccccccccccccccc   cccccccccc   ccccc    cccccccccccc   ccccccccccccccccc 
-ccccccccccccccccccccc   cccccccccc   cccccc     cccccccc    cccccccccccccccccc 
+                            cccccccccccccccccccccc
+                       ccccccccccccccccccccccccccccccccc
+                   ccccccccccccccccccccccccccccccccccccccccc
+                ccccccccccccccccccccccccccccccccccccccccccccccc
+             cccccccccccccccccccccccccccccccccccccccccccccccccccc
+           cccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+         cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+        ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+      ccccccccccccccccccccccccccccccccccccccccccc     cccccccccccccccccc
+     ccccccccccccc           cccccccccccccccc             cccccccccccccccc
+    ccccccccccccccccc   ccccccccccccccccccc     cccccccc    ccccccccccccccc
+   cccccccccccccccccc   cccccccccccccccccc    cccccccccccc   ccccccccccccccc
+  ccccccccccccccccccc   cccccccccccccccccc   cccccccccccccc   cccccccccccccc
+ cccccccccccccccccccc   ccccccccccccccccc   ccccccccccccccc   ccccccccccccccc
+ cccccccccccccccccccc   cccccccccccccccccc   cccccccccccccc   cccccccccccccccc
+ccccccccccccccccccccc   cccccccccc   ccccc    cccccccccccc   ccccccccccccccccc
+ccccccccccccccccccccc   cccccccccc   cccccc     cccccccc    cccccccccccccccccc
 cccccccccccccccccc                   cccccccc             ccccccccccccccccccccc
 cccccccccccccccccccccccccccccccccccccccccccccccccc    ccccccccccccccccccccccccc
 ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 cccccccccccccccccc                 ccccccc                  ccccccccccccccccccc
-ccccccccccccccccccccc   ccccccccc    cccccccc   ccccccccc   cccccccccccccccccc 
-ccccccccccccccccccccc   ccccccccccc  cccccccc   ccccccccc   cccccccccccccccccc 
- cccccccccccccccccccc   cccccccccc   cccccccc   cccccccccccccccccccccccccccccc 
- cccccccccccccccccccc               ccccccccc        cccccccccccccccccccccccc  
-  ccccccccccccccccccc   cccc    ccccccccccccc   cccccccccccccccccccccccccccc   
-   cccccccccccccccccc   ccccc    cccccccccccc   ccccccccc   cccccccccccccccc   
-    ccccccccccccccccc   ccccccc   ccccccccccc   ccccccccc   ccccccccccccccc    
-     ccccccccccccc      cccccccc     ccccc                  cccccccccccccc     
-      cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc       
-        ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc        
-         cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc          
-           cccccccccccccccccccccccccccccccccccccccccccccccccccccccc            
-             cccccccccccccccccccccccccccccccccccccccccccccccccccc              
-                ccccccccccccccccccccccccccccccccccccccccccccccc                
-                   ccccccccccccccccccccccccccccccccccccccccc                   
-                       ccccccccccccccccccccccccccccccccc                       
-                            cccccccccccccccccccccc            
+ccccccccccccccccccccc   ccccccccc    cccccccc   ccccccccc   cccccccccccccccccc
+ccccccccccccccccccccc   ccccccccccc  cccccccc   ccccccccc   cccccccccccccccccc
+ cccccccccccccccccccc   cccccccccc   cccccccc   cccccccccccccccccccccccccccccc
+ cccccccccccccccccccc               ccccccccc        cccccccccccccccccccccccc
+  ccccccccccccccccccc   cccc    ccccccccccccc   cccccccccccccccccccccccccccc
+   cccccccccccccccccc   ccccc    cccccccccccc   ccccccccc   cccccccccccccccc
+    ccccccccccccccccc   ccccccc   ccccccccccc   ccccccccc   ccccccccccccccc
+     ccccccccccccc      cccccccc     ccccc                  cccccccccccccc
+      cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+        ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+         cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+           cccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+             cccccccccccccccccccccccccccccccccccccccccccccccccccc
+                ccccccccccccccccccccccccccccccccccccccccccccccc
+                   ccccccccccccccccccccccccccccccccccccccccc
+                       ccccccccccccccccccccccccccccccccc
+                            cccccccccccccccccccccc
 
 
-We're hiring awesome people to build awesome things (like this) - http://lore.com/jobs                            
+We're hiring awesome people to build awesome things (like this) - http://lore.com/jobs
 
 Developed by: Jim Grandpre (@jimtla)
 Designed by: Matt Delbridge (@matt_delbridge), Aaron Carambula (@carambula), Joseph Cohen (@josephcohen)
@@ -56,14 +56,14 @@ do () ->
         if window.requestAnimationFrame
             break
         window.requestAnimationFrame = window[vendor+'RequestAnimationFrame'];
-        window.cancelAnimationFrame = 
+        window.cancelAnimationFrame =
           window[vendors+'CancelAnimationFrame'] || window[vendors+'RequestCancelAnimationFrame'];
 
     if !window.requestAnimationFrame
         window.requestAnimationFrame = (callback) ->
             currTime = new Date().getTime()
             timeToCall = Math.max(0, 16 - (currTime - lastTime))
-            id = window.setTimeout (() -> callback timeToCall), timeToCall 
+            id = window.setTimeout (() -> callback timeToCall), timeToCall
             lastTime = currTime + timeToCall
             return id
 
@@ -123,7 +123,7 @@ class Dot
             @velocity.y *= .9
 
 
-            # Spring physics! Accelerate towards the target position 
+            # Spring physics! Accelerate towards the target position
             dx = @target.position.x - @actual.position.x
             dy = @target.position.y - @actual.position.y
 
@@ -168,7 +168,7 @@ class Dot
         inner_changed = false
         inner_changes = {}
 
-        compute_inner = 
+        compute_inner =
             top: (t) -> (t.outer_padding/2 * scale)
             left: (t) -> (t.outer_padding/2 * scale)
             width: (t) -> t.radius * scale
@@ -188,7 +188,7 @@ class Dot
             @inner_node.css inner_changes
 
         # Update the outer dot (it almost always changes, so it's not worth checking)
-        node_changes = 
+        node_changes =
             top:    (@actual.position.y - outer_radius/2) * scale
             left:   (@actual.position.x - outer_radius/2) * scale
             width:  (@actual.radius + @actual.outer_padding) * scale
@@ -245,7 +245,7 @@ $ ->
     new_page = (points) ->
         if current_page_index > 1
             ck_logo.css opacity: 0
-        else    
+        else
             ck_logo.css opacity: 1
 
         if current_page_index == pages.length - 1
@@ -260,7 +260,7 @@ $ ->
             first_page_button.removeClass 'visible'
 
         these_dots = _.clone(dots)
-        dots = 
+        dots =
             for point in points
                 if these_dots.length > 0
                     mindist = Infinity
@@ -279,7 +279,7 @@ $ ->
 
         for dot in these_dots # Orphaned Dots
             dots.push dot
-            dot.set_goal 
+            dot.set_goal
                 opacity: 0
                 radius: 0
                 outer_padding: 0
@@ -307,7 +307,7 @@ $ ->
                 immediate = (true for i in [0...dot_count])
 
             _.defer -> ck_logo.css opacity: 0
-            logo_position = 
+            logo_position =
                 x: .5
                 y: (ck_logo_start() + ck_logo.height()/2 - 15)/minor_dimension
 
@@ -317,18 +317,18 @@ $ ->
                 if p * 150 + (p % 7) * 100 < elapsed_time - 800
                     position:
                         x: position.x + radius * Math.cos(ang) + random() * .3
-                        y: position.y + radius * Math.sin(ang) + random() * .3 
+                        y: position.y + radius * Math.sin(ang) + random() * .3
                     color: final_color
                     radius: dot_radius
                     opacity: 1
-                else if p * 50 < elapsed_time - 700 
-                    v = 
+                else if p * 50 < elapsed_time - 700
+                    v =
                         position:
                             x: position.x + radius * Math.cos(ang) * 2 + random()
                             y: position.y + radius * Math.sin(ang) * 2 + random()
                         color: start_colors[p % start_colors.length]
                         radius: dot_radius * .3 #+ random()
-                        opacity: .5 + random()#opacity 
+                        opacity: .5 + random()#opacity
                     if immediate[p]
                         v.immediate = ['opacity', 'color']
                         immediate[p] = false
@@ -338,23 +338,23 @@ $ ->
                 else if p * 50 < elapsed_time - 100
                     size = .15
                     grid = 4
-                    grid_ind = (p * 13) % 20 
-                    position: 
+                    grid_ind = (p * 13) % 20
+                    position:
                         x: logo_position.x + (grid_ind % grid) * size/(grid - 1) - size/2
                         y: logo_position.y + (parseInt(grid_ind/grid)) * size/(dot_count/grid - 1) - size/2
                     color: [255,255,255] #start_colors[p % start_colors.length]
                     radius: dot_radius * .4
                     opacity: 0#.5 + random() * 5
                     outer_opacity: .1
-                    background_image: 
+                    background_image:
                         position: logo_position
                         size: size
-                        image: '/microsite_static/coursekit_logo.png'                   
+                        image: '/microsite_static/coursekit_logo.png'
                 else
                     size = .15
                     grid = 4
-                    grid_ind = (p * 13) % 20 
-                    position: 
+                    grid_ind = (p * 13) % 20
+                    position:
                         x: logo_position.x + (grid_ind % grid) * size/(grid - 1) - size/2
                         y: logo_position.y + (parseInt(grid_ind/grid)) * size/(dot_count/grid - 1) - size/2
                     color: [255,255,255]
@@ -362,7 +362,7 @@ $ ->
                     opacity: 0
                     outer_opacity: 1
                     absolute: true
-                    background_image: 
+                    background_image:
                         position: logo_position
                         size: size
                         image: '/microsite_static/coursekit_logo.png'
@@ -371,7 +371,7 @@ $ ->
 
 
 
-    clump = (clump_position, size, color, radius, clump_max_radius, orbit_varience, grow, background, rotation_rate) -> 
+    clump = (clump_position, size, color, radius, clump_max_radius, orbit_varience, grow, background, rotation_rate) ->
         color ?= [84, 147, 195]
         size ?= 7
         radius ?= {constant: .01, varience: 150}
@@ -387,7 +387,7 @@ $ ->
 
         points = []
         make_points = ->
-            points = 
+            points =
                 for i in [0...size]
                     radius_seed = Math.random() * .1
                     r = radius_seed * radius_seed * radius_seed * radius.varience + radius.constant
@@ -400,7 +400,7 @@ $ ->
                     radius: r
                     background_image: background
                     opacity: opacity * (Math.random() * .5 + .5)
-                    outer_opacity: outer_opacity * (Math.random() * .5 + .5) 
+                    outer_opacity: outer_opacity * (Math.random() * .5 + .5)
 
         get_points: (time, dtim, elapsed_time) ->
             if elapsed_time == 0
@@ -411,7 +411,7 @@ $ ->
                 if elapsed_time > 3200 and grow
                     if ind > 0
                         p.outer_opacity -= .01
-                    else 
+                    else
                         if p.radius < .32
                             p.radius += .2
                         p.orbitx -= .1
@@ -429,26 +429,26 @@ $ ->
                 if grow and p.radius < .15 and time % 4 == 0
                     p.radius += Math.random() * .001
 
-                p.position = 
+                p.position =
                     x: clump_position.x + p.orbitx * Math.cos(p.ang)
                     y: clump_position.y + p.orbity * Math.sin(p.ang)
                 p
 
 
-    sharing = (position) -> 
+    sharing = (position) ->
         radius = .4
         pins = 3
         color = [122, 161, 106]
         opacity = .7
 
         size = 18
-        moving_points = 
+        moving_points =
             for i in [0...size]
                 ang: 2*Math.PI*i/size + random()
                 velocity: Math.sqrt(Math.random() + .2) * .015 * (if random() > 0 then 1 else - 1)
                 orbit: random() + radius
                 color: color
-                radius: (.1 + random()) * .3 
+                radius: (.1 + random()) * .3
                 opacity: opacity + random() * 5
                 'z-index': if random() > 0 then 60 else 40
 
@@ -468,7 +468,7 @@ $ ->
                     opacity: 1
                     outer_opacity: 1
                     radius: .2
-                    position: 
+                    position:
                         x: Math.cos(ang)*radius + position.x + pin_offsets[p].x
                         y: Math.sin(ang)*radius + position.y + pin_offsets[p].y
                     color: color
@@ -513,14 +513,14 @@ $ ->
                 points = generate_points()
 
             for p, i in points
-                offset = 
+                offset =
                     if p.ang > 2*Math.PI
                         ang = -(2*Math.PI - p.ang) + Math.PI
                         radius
                     else
                         ang = -p.ang
                         -radius
-                p.position = 
+                p.position =
                     x: center.x + radius * Math.cos(ang) + offset
                     y: center.y + radius * Math.sin(ang)
 
@@ -552,7 +552,7 @@ $ ->
 
             t = Math.max(Math.min(elapsed_time/duration, 1), 0)
             for p, i in points
-                p.position = 
+                p.position =
                     x: (end.x - start.x) * t + start.x + radius * Math.cos(p.ang)
                     y: (end.y - start.y) * t + start.y + radius * Math.sin(p.ang)
 
@@ -612,11 +612,11 @@ $ ->
 
         initialize_child = (time, parent, child, pivot, left) ->
             child.level = parent.level + 1
-            child.position = 
+            child.position =
                 x: parent.position.x + (Math.random() * .3 + .7) * (if left then -1 else 1)/(child.level * child.level)
                 y: parent.position.y + .08 + Math.random() * .08
             child.split_time = split_time time, child.level
-            child.children = 
+            child.children =
                 if left
                     parent.children[1...pivot]
                 else
@@ -674,10 +674,10 @@ $ ->
             ], text: 'We need a name<br>that reflects our<br>ambitions.'}
         {shapes: [
             tree()
-            ], text: 'Lore means<br>knowledge shared<br>between people.'}           
+            ], text: 'Lore means<br>knowledge shared<br>between people.'}
         {shapes: [
             clump({x: .5, y: .5}, 42, [225, 15, 23], {constant: .03, varience: 50}, .4, .06)
-            ], text: "That&rsquo;s what we<br>are about."}                      
+            ], text: "That&rsquo;s what we<br>are about."}
         {shapes: [
             clump({x: .5, y: .5}, 42, [225, 15, 23], {constant: .04, varience: 50}, .4, .04, true, {image: '/microsite_static/lore_logo.png', position: {x: .5, y: .5}, size: .3}, .3)
             ], text: ""}
@@ -686,7 +686,7 @@ $ ->
 
     # Manage the pages
     last_page = null
-    current_page_index = 0 
+    current_page_index = 0
     current_page = pages[current_page_index]
     page_count = pages.length
 
@@ -714,7 +714,7 @@ $ ->
         screen.width minor_dimension
         screen.height minor_dimension
 
-        screen.css 
+        screen.css
             top: (browser_height - minor_dimension)/2
 
         screen.find('.caption').css
@@ -730,8 +730,8 @@ $ ->
         logos = [{logo: ck_logo, aspect: 329/380, scale: .15}, {logo: lore_logo, aspect: 1, scale: .3}]
         for {logo, aspect, scale} in logos
             width = minor_dimension * scale
-            logo.css 
-                width: width 
+            logo.css
+                width: width
                 height: minor_dimension * scale / aspect
                 left: minor_dimension/2 - width/2
 
@@ -751,13 +751,13 @@ $ ->
     last_scroll_time = 0
     in_third = false
     $(window).scroll (e, triggered) ->
-        scroll_top = $(window).scrollTop() 
-        current_page_height = page_height * current_page_index 
+        scroll_top = $(window).scrollTop()
+        current_page_height = page_height * current_page_index
         portion = page_height/3
 
-        if scroll_top > current_page_height + 2*portion and pages[current_page_index + 1]? 
+        if scroll_top > current_page_height + 2*portion and pages[current_page_index + 1]?
             in_third = false
-        else if scroll_top < current_page_height - 2*portion and pages[current_page_index + 1]? 
+        else if scroll_top < current_page_height - 2*portion and pages[current_page_index + 1]?
             in_third = false
 
         if scroll_top > current_page_height + portion and pages[current_page_index + 1]?
@@ -770,7 +770,7 @@ $ ->
                 current_page_index--
                 current_page = pages[current_page_index]
                 in_third = true
-        else  
+        else
             in_third = false
 
 
@@ -793,14 +793,14 @@ $ ->
         last_mousewheel = now
 
         momentum = .8
-        scroll_top = $(window).scrollTop() 
+        scroll_top = $(window).scrollTop()
         if (delta) > 0
             target_page = parseInt(scroll_top/page_height + .5) - 1
-        else 
+        else
             target_page = parseInt(scroll_top/page_height + .5) + 1
         #scroll_momentum = Math.max(Math.min(scroll_momentum, .8), -.8)
         last_scroll_time = +new Date()
-            
+
     $(window).scroll()
 
 
@@ -815,11 +815,11 @@ $ ->
         return false
 
     screen.click ->
-        scroll_top = $(window).scrollTop() 
+        scroll_top = $(window).scrollTop()
         target_page = parseInt(scroll_top/page_height + .5) + 1
 
     $(document).bind 'keydown', (e) ->
-        scroll_top = $(window).scrollTop() 
+        scroll_top = $(window).scrollTop()
         if e.which in [37, 38]
             target_page = parseInt(sroll_top/page_height + .5) - 1
             false
