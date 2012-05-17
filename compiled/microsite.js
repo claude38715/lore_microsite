@@ -89,7 +89,7 @@ Designed by: Matt Delbridge (@matt_delbridge), Aaron Carambula (@carambula), Jos
   };
 
   random = function() {
-    return (Math.random() - .5) / 10;
+    return (Math.random() - 0.5) / 10;
   };
 
   deep_clone = function(target) {
@@ -149,9 +149,9 @@ Designed by: Matt Delbridge (@matt_delbridge), Aaron Carambula (@carambula), Jos
       if (this.target.absolute) {
         return this.actual = deep_clone(this.target);
       } else {
-        speed = .004;
-        this.velocity.x *= .9;
-        this.velocity.y *= .9;
+        speed = 0.004;
+        this.velocity.x *= 0.9;
+        this.velocity.y *= 0.9;
         dx = this.target.position.x - this.actual.position.x;
         dy = this.target.position.y - this.actual.position.y;
         this.velocity.x += dx * speed;
@@ -419,14 +419,14 @@ Designed by: Matt Delbridge (@matt_delbridge), Aaron Carambula (@carambula), Jos
     };
     decompose_ck = function() {
       var dot_count, dot_radius, final_color, immediate, position, radius, start_colors;
-      radius = .15;
+      radius = 0.15;
       dot_count = 20;
-      dot_radius = .08;
+      dot_radius = 0.08;
       start_colors = [[74, 39, 62], [54, 125, 186], [54, 125, 186], [93, 141, 72], [239, 158, 24], [191, 41, 36]];
       final_color = [114, 84, 105];
       position = {
-        x: .5,
-        y: .5
+        x: 0.5,
+        y: 0.5
       };
       immediate = [];
       return {
@@ -448,7 +448,7 @@ Designed by: Matt Delbridge (@matt_delbridge), Aaron Carambula (@carambula), Jos
             });
           });
           logo_position = {
-            x: .5,
+            x: 0.5,
             y: (ck_logo_start() + ck_logo.height() / 2 - 15) / minor_dimension
           };
           _results = [];
@@ -457,8 +457,8 @@ Designed by: Matt Delbridge (@matt_delbridge), Aaron Carambula (@carambula), Jos
             if (p * 150 + (p % 7) * 100 < elapsed_time - 800) {
               _results.push({
                 position: {
-                  x: position.x + radius * Math.cos(ang) + random() * .3,
-                  y: position.y + radius * Math.sin(ang) + random() * .3
+                  x: position.x + radius * Math.cos(ang) + random() * 0.3,
+                  y: position.y + radius * Math.sin(ang) + random() * 0.3
                 },
                 color: final_color,
                 radius: dot_radius,
@@ -471,8 +471,8 @@ Designed by: Matt Delbridge (@matt_delbridge), Aaron Carambula (@carambula), Jos
                   y: position.y + radius * Math.sin(ang) * 2 + random()
                 },
                 color: start_colors[p % start_colors.length],
-                radius: dot_radius * .3,
-                opacity: .5 + random()
+                radius: dot_radius * 0.3,
+                opacity: 0.5 + random()
               };
               if (immediate[p]) {
                 v.immediate = ['opacity', 'color'];
@@ -482,7 +482,7 @@ Designed by: Matt Delbridge (@matt_delbridge), Aaron Carambula (@carambula), Jos
               }
               _results.push(v);
             } else if (p * 50 < elapsed_time - 100) {
-              size = .15;
+              size = 0.15;
               grid = 4;
               grid_ind = (p * 13) % 20;
               _results.push({
@@ -491,9 +491,9 @@ Designed by: Matt Delbridge (@matt_delbridge), Aaron Carambula (@carambula), Jos
                   y: logo_position.y + (parseInt(grid_ind / grid)) * size / (dot_count / grid - 1) - size / 2
                 },
                 color: [255, 255, 255],
-                radius: dot_radius * .4,
+                radius: dot_radius * 0.4,
                 opacity: 0,
-                outer_opacity: .1,
+                outer_opacity: 0.1,
                 background_image: {
                   position: logo_position,
                   size: size,
@@ -501,7 +501,7 @@ Designed by: Matt Delbridge (@matt_delbridge), Aaron Carambula (@carambula), Jos
                 }
               });
             } else {
-              size = .15;
+              size = 0.15;
               grid = 4;
               grid_ind = (p * 13) % 20;
               _results.push({
@@ -536,7 +536,7 @@ Designed by: Matt Delbridge (@matt_delbridge), Aaron Carambula (@carambula), Jos
       }
       if (radius == null) {
         radius = {
-          constant: .01,
+          constant: 0.01,
           variance: 150
         };
       }
@@ -544,7 +544,7 @@ Designed by: Matt Delbridge (@matt_delbridge), Aaron Carambula (@carambula), Jos
         clump_max_radius = 999;
       }
       if (orbit_variance == null) {
-        orbit_variance = .014;
+        orbit_variance = 0.014;
       }
       if (grow == null) {
         grow = false;
@@ -552,8 +552,8 @@ Designed by: Matt Delbridge (@matt_delbridge), Aaron Carambula (@carambula), Jos
       if (rotation_rate == null) {
         rotation_rate = 1;
       }
-      outer_opacity = .8;
-      opacity = .8;
+      outer_opacity = 0.8;
+      opacity = 0.8;
       if (background != null) {
         opacity = 0;
       }
@@ -574,8 +574,8 @@ Designed by: Matt Delbridge (@matt_delbridge), Aaron Carambula (@carambula), Jos
               color: color,
               radius: r,
               background_image: background,
-              opacity: opacity * (Math.random() * .5 + .5),
-              outer_opacity: outer_opacity * (Math.random() * .5 + .5)
+              opacity: opacity * (Math.random() * 0.5 + 0.5),
+              outer_opacity: outer_opacity * (Math.random() * 0.5 + 0.5)
             });
           }
           return _results;
@@ -593,26 +593,26 @@ Designed by: Matt Delbridge (@matt_delbridge), Aaron Carambula (@carambula), Jos
             p.ang += dtim / 8 * p.velocity;
             if (elapsed_time > 3200 && grow) {
               if (ind > 0) {
-                p.outer_opacity -= .01;
+                p.outer_opacity -= 0.01;
               } else {
-                if (p.radius < .32) {
-                  p.radius += .2;
+                if (p.radius < 0.32) {
+                  p.radius += 0.2;
                 }
-                p.orbitx -= .1;
-                p.orbity -= .1;
+                p.orbitx -= 0.1;
+                p.orbity -= 0.1;
                 p.orbitx = Math.max(0, p.orbitx);
                 p.orbity = Math.max(0, p.orbity);
                 if (elapsed_time > 4000) {
-                  p.outer_opacity += .005;
+                  p.outer_opacity += 0.005;
                 } else {
-                  p.outer_opacity = .2;
+                  p.outer_opacity = 0.2;
                 }
               }
             } else {
               p.orbitx += random() / 100;
               p.orbity += random() / 100;
             }
-            if (grow && p.radius < .15 && time % 4 === 0) {
+            if (grow && p.radius < 0.15 && time % 4 === 0) {
               p.radius += Math.random() / 1e3;
             }
             p.position = {
@@ -627,10 +627,10 @@ Designed by: Matt Delbridge (@matt_delbridge), Aaron Carambula (@carambula), Jos
     };
     sharing = function(position) {
       var color, i, moving_points, opacity, pin_offsets, pins, radius, size;
-      radius = .4;
+      radius = 0.4;
       pins = 3;
       color = [122, 161, 106];
-      opacity = .7;
+      opacity = 0.7;
       size = 18;
       moving_points = (function() {
         var _i, _results;
@@ -638,10 +638,10 @@ Designed by: Matt Delbridge (@matt_delbridge), Aaron Carambula (@carambula), Jos
         for (i = _i = 0; 0 <= size ? _i < size : _i > size; i = 0 <= size ? ++_i : --_i) {
           _results.push({
             ang: 2 * Math.PI * i / size + random(),
-            velocity: Math.sqrt(Math.random() + .2) * .015 * (random() > 0 ? 1 : -1),
+            velocity: Math.sqrt(Math.random() + 0.2) * 0.015 * (random() > 0 ? 1 : -1),
             orbit: random() + radius,
             color: color,
-            radius: (.1 + random()) * .3,
+            radius: (.1 + random()) * 0.3,
             opacity: opacity + random() * 5,
             'z-index': random() > 0 ? 60 : 40
           });
@@ -667,12 +667,12 @@ Designed by: Matt Delbridge (@matt_delbridge), Aaron Carambula (@carambula), Jos
             ang = 2 * Math.PI * p / pins - Math.PI / 32;
             pin_offsets[p].x += random() / 10;
             pin_offsets[p].y += random() / 10;
-            pin_offsets[p].x *= .8;
-            pin_offsets[p].y *= .8;
+            pin_offsets[p].x *= 0.8;
+            pin_offsets[p].y *= 0.8;
             points.push({
               opacity: 1,
               outer_opacity: 1,
-              radius: .2,
+              radius: 0.2,
               position: {
                 x: Math.cos(ang) * radius + position.x + pin_offsets[p].x,
                 y: Math.sin(ang) * radius + position.y + pin_offsets[p].y
@@ -683,7 +683,7 @@ Designed by: Matt Delbridge (@matt_delbridge), Aaron Carambula (@carambula), Jos
           for (i = _j = 0, _len = moving_points.length; _j < _len; i = ++_j) {
             p = moving_points[i];
             near_pin = ((p.ang % (2 * Math.PI)) + Math.PI / 32) / (2 * Math.PI) * pins;
-            ang = (elapsed_time + 5000 * i / moving_points.length) > 5500 ? (p.opacity += random() * .2, distance = Math.abs(Math.abs(near_pin - parseInt(near_pin)) - .5) * 4, p.ang += dtim / 10 * p.velocity * .8 / (distance * distance * distance + .1), p.ang) : parseInt(near_pin) / pins * 2 * Math.PI - Math.PI / 32;
+            ang = (elapsed_time + 5000 * i / moving_points.length) > 5500 ? (p.opacity += random() * 0.2, distance = Math.abs(Math.abs(near_pin - parseInt(near_pin)) - 0.5) * 4, p.ang += dtim / 10 * p.velocity * 0.8 / (distance * distance * distance + 0.1), p.ang) : parseInt(near_pin) / pins * 2 * Math.PI - Math.PI / 32;
             p.position = {
               x: position.x + p.orbit * Math.cos(ang),
               y: position.y + p.orbit * Math.sin(ang)
@@ -696,10 +696,10 @@ Designed by: Matt Delbridge (@matt_delbridge), Aaron Carambula (@carambula), Jos
     };
     infinity = function(center) {
       var color, dot_radius, generate_points, opacity, points, radius, size;
-      radius = .2;
+      radius = 0.2;
       color = [236, 156, 39];
-      opacity = .8;
-      dot_radius = .1;
+      opacity = 0.8;
+      dot_radius = 0.1;
       size = 21;
       points = [];
       generate_points = function() {
@@ -709,7 +709,7 @@ Designed by: Matt Delbridge (@matt_delbridge), Aaron Carambula (@carambula), Jos
           _results.push({
             ang: 4 * Math.PI * i / size,
             color: color,
-            radius: (.1 + random()) * .3,
+            radius: (.1 + random()) * 0.3,
             opacity: opacity + random() * 2
           });
         }
@@ -745,7 +745,7 @@ Designed by: Matt Delbridge (@matt_delbridge), Aaron Carambula (@carambula), Jos
         color = [236, 156, 39];
       }
       if (opacity == null) {
-        opacity = .8;
+        opacity = 0.8;
       }
       if (duration == null) {
         duration = 1000;
@@ -801,7 +801,7 @@ Designed by: Matt Delbridge (@matt_delbridge), Aaron Carambula (@carambula), Jos
         color = [236, 156, 39];
       }
       if (opacity == null) {
-        opacity = .8;
+        opacity = 0.8;
       }
       if (outer_padding == null) {
         outer_padding = 0;
@@ -830,8 +830,8 @@ Designed by: Matt Delbridge (@matt_delbridge), Aaron Carambula (@carambula), Jos
       var color, initialize_child, num_dots, out_points, outer_opacity, outer_padding, points, reset_points, split_time;
       num_dots = 42;
       color = [230, 109, 37];
-      outer_padding = .01;
-      outer_opacity = .1;
+      outer_padding = 0.01;
+      outer_opacity = 0.1;
       split_time = function(time, level) {
         return time + 200 + Math.random() * 1000 * Math.sqrt(level);
       };
@@ -843,13 +843,13 @@ Designed by: Matt Delbridge (@matt_delbridge), Aaron Carambula (@carambula), Jos
         points = [];
         points.push({
           color: color,
-          radius: .08,
+          radius: 0.08,
           opacity: 1,
           outer_padding: outer_padding,
           outer_opacity: outer_opacity,
           position: {
-            x: .5,
-            y: .2
+            x: 0.5,
+            y: 0.2
           },
           children: [],
           split_time: split_time(time, 1),
@@ -859,8 +859,8 @@ Designed by: Matt Delbridge (@matt_delbridge), Aaron Carambula (@carambula), Jos
         _results = [];
         for (p = _i = 1; 1 <= num_dots ? _i < num_dots : _i > num_dots; p = 1 <= num_dots ? ++_i : --_i) {
           np = deep_clone(points[0]);
-          np.radius = .01;
-          np.opacity = .1;
+          np.radius = 0.01;
+          np.opacity = 0.1;
           np.children = [];
           points[0].children.push(np);
           _results.push(out_points.push(np));
@@ -871,8 +871,8 @@ Designed by: Matt Delbridge (@matt_delbridge), Aaron Carambula (@carambula), Jos
         var c, _i, _len, _ref;
         child.level = parent.level + 1;
         child.position = {
-          x: parent.position.x + (Math.random() * .3 + .7) * (left ? -1 : 1) / (child.level * child.level),
-          y: parent.position.y + .08 + Math.random() * .08
+          x: parent.position.x + (Math.random() * 0.3 + 0.7) * (left ? -1 : 1) / (child.level * child.level),
+          y: parent.position.y + 0.08 + Math.random() * 0.08
         };
         child.split_time = split_time(time, child.level);
         child.children = left ? parent.children.slice(1, pivot) : parent.children.slice(pivot + 1);
@@ -893,8 +893,8 @@ Designed by: Matt Delbridge (@matt_delbridge), Aaron Carambula (@carambula), Jos
           }
           for (_i = 0, _len = points.length; _i < _len; _i++) {
             p = points[_i];
-            p.position.x += random() * .08;
-            p.position.y += random() * .08;
+            p.position.x += random() * 0.08;
+            p.position.y += random() * 0.08;
             if (p.split_time < time && p.children.length >= 2) {
               l = parseInt(p.children.length / 2);
               initialize_child(time, p, p.children[0], l, true);
@@ -916,30 +916,30 @@ Designed by: Matt Delbridge (@matt_delbridge), Aaron Carambula (@carambula), Jos
       }, {
         shapes: [
           clump({
-            x: .4,
-            y: .7
+            x: 0.4,
+            y: 0.7
           }), clump({
-            x: .1,
-            y: .3
+            x: 0.1,
+            y: 0.3
           }), clump({
-            x: .8,
-            y: .4
+            x: 0.8,
+            y: 0.4
           })
         ],
         text: 'Courses became<br>communities of<br>learners.'
       }, {
         shapes: [
           sharing({
-            x: .5,
-            y: .5
+            x: 0.5,
+            y: 0.5
           })
         ],
         text: 'We&rsquo;ve seen<br>that people learn<br>by sharing.'
       }, {
         shapes: [
           infinity({
-            x: .5,
-            y: .5
+            x: 0.5,
+            y: 0.5
           })
         ],
         text: 'Our mission is to<br>connect the world&rsquo;s<br>learners and<br>educators.'
@@ -947,36 +947,36 @@ Designed by: Matt Delbridge (@matt_delbridge), Aaron Carambula (@carambula), Jos
         shapes: [
           animated_circle({
             size: 10,
-            radius: .06,
+            radius: 0.06,
             start: {
-              x: .3,
-              y: .5
+              x: 0.3,
+              y: 0.5
             },
             end: {
-              x: .5,
-              y: .5
+              x: 0.5,
+              y: 0.5
             },
-            dot_radius: .02,
+            dot_radius: 0.02,
             rotation: -1
           }), animated_circle({
             size: 10,
-            radius: .12,
+            radius: 0.12,
             start: {
-              x: .7,
-              y: .5
+              x: 0.7,
+              y: 0.5
             },
             end: {
-              x: .5,
-              y: .5
+              x: 0.5,
+              y: 0.5
             },
-            dot_radius: .03,
+            dot_radius: 0.03,
             rotation: 1
           }), point({
             position: {
-              x: .5,
-              y: .5
+              x: 0.5,
+              y: 0.5
             },
-            dot_radius: .03
+            dot_radius: 0.03
           })
         ],
         text: 'We need a name<br>that reflects our<br>ambitions.'
@@ -986,30 +986,30 @@ Designed by: Matt Delbridge (@matt_delbridge), Aaron Carambula (@carambula), Jos
       }, {
         shapes: [
           clump({
-            x: .5,
-            y: .5
+            x: 0.5,
+            y: 0.5
           }, 42, [225, 15, 23], {
-            constant: .03,
+            constant: 0.03,
             variance: 50
-          }, .4, .06)
+          }, 0.4, 0.06)
         ],
         text: "That&rsquo;s what we<br>are about."
       }, {
         shapes: [
           clump({
-            x: .5,
-            y: .5
+            x: 0.5,
+            y: 0.5
           }, 42, [225, 15, 23], {
-            constant: .04,
+            constant: 0.04,
             variance: 50
-          }, .4, .04, true, {
+          }, 0.4, 0.04, true, {
             image: '/microsite_static/lore_logo.png',
             position: {
-              x: .5,
-              y: .5
+              x: 0.5,
+              y: 0.5
             },
-            size: .3
-          }, .3)
+            size: 0.3
+          }, 0.3)
         ],
         text: ""
       }
@@ -1045,7 +1045,7 @@ Designed by: Matt Delbridge (@matt_delbridge), Aaron Carambula (@carambula), Jos
       });
       screen.find('.caption').css({
         'font-size': Math.min(minor_dimension / 12, 85),
-        left: .1 * minor_dimension
+        left: 0.1 * minor_dimension
       });
       screen.find('.smaller').css({
         'font-size': Math.min(minor_dimension / 20, 60)
@@ -1056,11 +1056,11 @@ Designed by: Matt Delbridge (@matt_delbridge), Aaron Carambula (@carambula), Jos
         {
           logo: ck_logo,
           aspect: 329 / 380,
-          scale: .15
+          scale: 0.15
         }, {
           logo: lore_logo,
           aspect: 1,
-          scale: .3
+          scale: 0.3
         }
       ];
       for (_j = 0, _len1 = logos.length; _j < _len1; _j++) {
@@ -1109,7 +1109,7 @@ Designed by: Matt Delbridge (@matt_delbridge), Aaron Carambula (@carambula), Jos
       for (_j = 0, _len1 = text_blocks.length; _j < _len1; _j++) {
         _ref = text_blocks[_j], node = _ref.node, position = _ref.position;
         target = page_height * position - node.height() / 3;
-        diff = (target - scroll_top) * .7 / page_height;
+        diff = (target - scroll_top) * 0.7 / page_height;
         sign = diff > 0 ? 1 : -1;
         node.css({
           top: diff * diff * sign * page_height + minor_dimension / 3
@@ -1123,16 +1123,16 @@ Designed by: Matt Delbridge (@matt_delbridge), Aaron Carambula (@carambula), Jos
       var momentum, now, scroll_top;
       console.log(delta);
       now = +(new Date);
-      if (now - last_mousewheel < 1500 || Math.abs(delta) < .4) {
+      if (now - last_mousewheel < 1500 || Math.abs(delta) < 0.4) {
         return;
       }
       last_mousewheel = now;
-      momentum = .8;
+      momentum = 0.8;
       scroll_top = $(window).scrollTop();
       if (delta > 0) {
-        target_page = parseInt(scroll_top / page_height + .5) - 1;
+        target_page = parseInt(scroll_top / page_height + 0.5) - 1;
       } else {
-        target_page = parseInt(scroll_top / page_height + .5) + 1;
+        target_page = parseInt(scroll_top / page_height + 0.5) + 1;
       }
       return last_scroll_time = +(new Date);
     });
@@ -1140,7 +1140,7 @@ Designed by: Matt Delbridge (@matt_delbridge), Aaron Carambula (@carambula), Jos
     next_page_button = screen.find('.next-page').click(function() {
       var scroll_top;
       scroll_top = $(window).scrollTop();
-      target_page = parseInt(scroll_top / page_height + .5) + 1;
+      target_page = parseInt(scroll_top / page_height + 0.5) + 1;
       return false;
     });
     first_page_button = screen.find('.first-page').click(function() {
@@ -1150,15 +1150,15 @@ Designed by: Matt Delbridge (@matt_delbridge), Aaron Carambula (@carambula), Jos
     screen.click(function() {
       var scroll_top;
       scroll_top = $(window).scrollTop();
-      return target_page = parseInt(scroll_top / page_height + .5) + 1;
+      return target_page = parseInt(scroll_top / page_height + 0.5) + 1;
     });
     $(document).bind('keydown', function(e) {
       var scroll_top, _ref, _ref1;
       scroll_top = $(window).scrollTop();
       if ((_ref = e.which) === 37 || _ref === 38) {
-        target_page = parseInt(sroll_top / page_height + .5) - 1;
+        target_page = parseInt(sroll_top / page_height + 0.5) - 1;
       } else if ((_ref1 = e.which) === 39 || _ref1 === 40 || _ref1 === 32 || _ref1 === 13 || _ref1 === 9) {
-        target_page = parseInt(scroll_top / page_height + .5) + 1;
+        target_page = parseInt(scroll_top / page_height + 0.5) + 1;
       }
       return false;
     });
@@ -1184,7 +1184,7 @@ Designed by: Matt Delbridge (@matt_delbridge), Aaron Carambula (@carambula), Jos
         sign = scroll_momentum / Math.abs(scroll_momentum);
         last_sign = sign;
         closest_below = parseInt(last_scroll / page_height);
-        scroll_momentum += distance_to_target * .08;
+        scroll_momentum += distance_to_target * 0.08;
         if ((last_below != null) && last_below !== closest_below) {
           scroll_momentum = 0;
           scroll_paused = time;

@@ -76,7 +76,7 @@ dist2 = (p0, p1) ->
     (p0.x - p1.x) * (p0.x - p1.x) + (p0.y - p1.y) * (p0.y - p1.y)
 
 # Scaled random centered on zero - just for convenience
-random = -> (Math.random() - .5) / 10
+random = -> (Math.random() - 0.5) / 10
 
 # Clone an acyclic array or object
 deep_clone = (target) ->
@@ -117,11 +117,11 @@ class Dot
         if @target.absolute
             @actual = deep_clone @target
         else
-            speed = .004
+            speed = 0.004
 
             # Apply Friction
-            @velocity.x *= .9
-            @velocity.y *= .9
+            @velocity.x *= 0.9
+            @velocity.y *= 0.9
 
 
             # Spring physics! Accelerate towards the target position
@@ -295,12 +295,12 @@ $ ->
             []
 
     decompose_ck = ->
-        radius = .15
+        radius = 0.15
         dot_count = 20
-        dot_radius = .08
+        dot_radius = 0.08
         start_colors = [[74, 39, 62], [54, 125, 186],[54, 125, 186], [93, 141, 72], [239, 158, 24], [191, 41, 36] ]
         final_color = [114, 84, 105]
-        position = {x: .5, y: .5}
+        position = {x: 0.5, y: 0.5}
 
 
         immediate = []
@@ -310,7 +310,7 @@ $ ->
 
             _.defer -> ck_logo.css opacity: 0
             logo_position =
-                x: .5
+                x: 0.5
                 y: (ck_logo_start() + ck_logo.height()/2 - 15)/minor_dimension
 
 
@@ -318,8 +318,8 @@ $ ->
                 ang = 2 * Math.PI * p/6
                 if p * 150 + (p % 7) * 100 < elapsed_time - 800
                     position:
-                        x: position.x + radius * Math.cos(ang) + random() * .3
-                        y: position.y + radius * Math.sin(ang) + random() * .3
+                        x: position.x + radius * Math.cos(ang) + random() * 0.3
+                        y: position.y + radius * Math.sin(ang) + random() * 0.3
                     color: final_color
                     radius: dot_radius
                     opacity: 1
@@ -329,8 +329,8 @@ $ ->
                             x: position.x + radius * Math.cos(ang) * 2 + random()
                             y: position.y + radius * Math.sin(ang) * 2 + random()
                         color: start_colors[p % start_colors.length]
-                        radius: dot_radius * .3 #+ random()
-                        opacity: .5 + random()#opacity
+                        radius: dot_radius * 0.3 #+ random()
+                        opacity: 0.5 + random()#opacity
                     if immediate[p]
                         v.immediate = ['opacity', 'color']
                         immediate[p] = false
@@ -338,22 +338,22 @@ $ ->
                         v.immediate = []
                     v
                 else if p * 50 < elapsed_time - 100
-                    size = .15
+                    size = 0.15
                     grid = 4
                     grid_ind = (p * 13) % 20
                     position:
                         x: logo_position.x + (grid_ind % grid) * size/(grid - 1) - size/2
                         y: logo_position.y + (parseInt(grid_ind/grid)) * size/(dot_count/grid - 1) - size/2
                     color: [255,255,255] #start_colors[p % start_colors.length]
-                    radius: dot_radius * .4
+                    radius: dot_radius * 0.4
                     opacity: 0#.5 + random() * 5
-                    outer_opacity: .1
+                    outer_opacity: 0.1
                     background_image:
                         position: logo_position
                         size: size
                         image: '/microsite_static/coursekit_logo.png'
                 else
-                    size = .15
+                    size = 0.15
                     grid = 4
                     grid_ind = (p * 13) % 20
                     position:
@@ -376,14 +376,14 @@ $ ->
     clump = (clump_position, size, color, radius, clump_max_radius, orbit_variance, grow, background, rotation_rate) ->
         color ?= [84, 147, 195]
         size ?= 7
-        radius ?= {constant: .01, variance: 150}
+        radius ?= {constant: 0.01, variance: 150}
         clump_max_radius ?= 999
-        orbit_variance ?= .014
+        orbit_variance ?= 0.014
         grow ?= no
         rotation_rate ?= 1
 
-        outer_opacity = .8
-        opacity = .8
+        outer_opacity = 0.8
+        opacity = 0.8
         if background?
             opacity = 0
 
@@ -401,8 +401,8 @@ $ ->
                     color: color
                     radius: r
                     background_image: background
-                    opacity: opacity * (Math.random() * .5 + .5)
-                    outer_opacity: outer_opacity * (Math.random() * .5 + .5)
+                    opacity: opacity * (Math.random() * 0.5 + 0.5)
+                    outer_opacity: outer_opacity * (Math.random() * 0.5 + 0.5)
 
         get_points: (time, dtim, elapsed_time) ->
             if elapsed_time is 0
@@ -412,23 +412,23 @@ $ ->
                 p.ang += dtim/8 * p.velocity
                 if elapsed_time > 3200 and grow
                     if ind > 0
-                        p.outer_opacity -= .01
+                        p.outer_opacity -= 0.01
                     else
-                        if p.radius < .32
-                            p.radius += .2
-                        p.orbitx -= .1
-                        p.orbity -= .1
+                        if p.radius < 0.32
+                            p.radius += 0.2
+                        p.orbitx -= 0.1
+                        p.orbity -= 0.1
                         p.orbitx = Math.max 0, p.orbitx
                         p.orbity = Math.max 0, p.orbity
                         if elapsed_time > 4000
-                            p.outer_opacity += .005
+                            p.outer_opacity += 0.005
                         else
-                            p.outer_opacity = .2
+                            p.outer_opacity = 0.2
                 else
                     p.orbitx += random() / 100
                     p.orbity += random() / 100
 
-                if grow and p.radius < .15 and time % 4 is 0
+                if grow and p.radius < 0.15 and time % 4 is 0
                     p.radius += Math.random() / 1e3
 
                 p.position =
@@ -438,19 +438,19 @@ $ ->
 
 
     sharing = (position) ->
-        radius = .4
+        radius = 0.4
         pins = 3
         color = [122, 161, 106]
-        opacity = .7
+        opacity = 0.7
 
         size = 18
         moving_points =
             for i in [0...size]
                 ang: 2*Math.PI*i/size + random()
-                velocity: Math.sqrt(Math.random() + .2) * .015 * (if random() > 0 then 1 else - 1)
+                velocity: Math.sqrt(Math.random() + 0.2) * 0.015 * (if random() > 0 then 1 else - 1)
                 orbit: random() + radius
                 color: color
-                radius: (.1 + random()) * .3
+                radius: (.1 + random()) * 0.3
                 opacity: opacity + random() * 5
                 'z-index': if random() > 0 then 60 else 40
 
@@ -464,12 +464,12 @@ $ ->
 
                 pin_offsets[p].x += random() / 10
                 pin_offsets[p].y += random() / 10
-                pin_offsets[p].x *= .8
-                pin_offsets[p].y *= .8
+                pin_offsets[p].x *= 0.8
+                pin_offsets[p].y *= 0.8
                 points.push
                     opacity: 1
                     outer_opacity: 1
-                    radius: .2
+                    radius: 0.2
                     position:
                         x: Math.cos(ang)*radius + position.x + pin_offsets[p].x
                         y: Math.sin(ang)*radius + position.y + pin_offsets[p].y
@@ -479,10 +479,10 @@ $ ->
                 near_pin = ((p.ang % (2*Math.PI)) + Math.PI/32)/(2*Math.PI)*pins
                 ang =
                     if (elapsed_time + 5000*i/moving_points.length) > 5500
-                        p.opacity += random() * .2
-                        distance = Math.abs(Math.abs((near_pin - parseInt near_pin)) - .5) * 4
+                        p.opacity += random() * 0.2
+                        distance = Math.abs(Math.abs((near_pin - parseInt near_pin)) - 0.5) * 4
 
-                        p.ang += dtim/10 * p.velocity * .8/(distance*distance*distance + .1)
+                        p.ang += dtim/10 * p.velocity * 0.8/(distance*distance*distance + 0.1)
                         p.ang
                     else
                         parseInt(near_pin)/pins * 2 * Math.PI - Math.PI/32
@@ -496,10 +496,10 @@ $ ->
 
 
     infinity = (center) ->
-        radius = .2
+        radius = 0.2
         color = [236, 156, 39]
-        opacity = .8
-        dot_radius = .1
+        opacity = 0.8
+        dot_radius = 0.1
 
         size = 21
         points = []
@@ -507,7 +507,7 @@ $ ->
             for i in [0...size]
                 ang: 4*Math.PI*i/size
                 color: color
-                radius: (.1 + random()) * .3
+                radius: (.1 + random()) * 0.3
                 opacity: opacity + random() * 2
 
         get_points: (time, dtim, elapsed_time) ->
@@ -533,7 +533,7 @@ $ ->
     animated_circle = ({duration, size, radius, start, end, rotation, dot_radius, color, opacity, outer_padding, outer_opacity}) ->
         max_dots = 6
         color ?= [236, 156, 39]
-        opacity ?= .8
+        opacity ?= 0.8
         duration ?= 1000
         outer_padding ?= 0
         outer_opacity ?= 0
@@ -564,7 +564,7 @@ $ ->
 
     point = ({position, dot_radius, color, opacity, outer_padding, outer_opacity, z_index}) ->
         color ?= [236, 156, 39]
-        opacity ?= .8
+        opacity ?= 0.8
         outer_padding ?= 0
         outer_opacity ?= 0
         z_index ?= 1
@@ -582,8 +582,8 @@ $ ->
     tree = ->
         num_dots = 42
         color = [230, 109, 37]
-        outer_padding = .01
-        outer_opacity = .1
+        outer_padding = 0.01
+        outer_opacity = 0.1
 
         split_time = (time, level) -> time + 200 + Math.random() * 1000 * Math.sqrt level
 
@@ -594,11 +594,11 @@ $ ->
             points = []
             points.push
                 color: color
-                radius: .08
+                radius: 0.08
                 opacity: 1
                 outer_padding: outer_padding
                 outer_opacity: outer_opacity
-                position: {x: .5, y: .2}
+                position: {x: 0.5, y: 0.2}
                 children: []
                 split_time: split_time time, 1
                 level: 1
@@ -606,8 +606,8 @@ $ ->
 
             for p in [1...num_dots]
                 np = deep_clone points[0]
-                np.radius = .01
-                np.opacity = .1
+                np.radius = 0.01
+                np.opacity = 0.1
                 np.children = []
                 points[0].children.push np
                 out_points.push np
@@ -615,8 +615,8 @@ $ ->
         initialize_child = (time, parent, child, pivot, left) ->
             child.level = parent.level + 1
             child.position =
-                x: parent.position.x + (Math.random() * .3 + .7) * (if left then -1 else 1)/(child.level * child.level)
-                y: parent.position.y + .08 + Math.random() * .08
+                x: parent.position.x + (Math.random() * 0.3 + 0.7) * (if left then -1 else 1)/(child.level * child.level)
+                y: parent.position.y + 0.08 + Math.random() * 0.08
             child.split_time = split_time time, child.level
             child.children =
                 if left
@@ -636,8 +636,8 @@ $ ->
                 reset_points time
 
             for p in points
-                p.position.x += random() * .08
-                p.position.y += random() * .08
+                p.position.x += random() * 0.08
+                p.position.y += random() * 0.08
                 if p.split_time < time and p.children.length >= 2
                     l = parseInt p.children.length/2
                     initialize_child time, p, p.children[0], l, yes
@@ -652,36 +652,36 @@ $ ->
     pages = [
         {shapes: [ck_logo_shape()], text: '<span class="smaller"><b>Coursekit is now Lore.<br>Same Company, New Name.</b><br>This is why we made the change.</span>'}
         {shapes: [decompose_ck()], text: 'Coursekit started<br>as a toolkit for<br>courses.'}
-        {shapes: [clump({x: .4, y: .7}), clump({x: .1, y: .3}), clump({x: .8, y: .4})], text: 'Courses became<br>communities of<br>learners.'}
-        {shapes: [sharing({x: .5, y: .5})], text: 'We&rsquo;ve seen<br>that people learn<br>by sharing.'}
-        {shapes: [infinity({x: .5, y: .5})], text: 'Our mission is to<br>connect the world&rsquo;s<br>learners and<br>educators.'}
+        {shapes: [clump({x: 0.4, y: 0.7}), clump({x: 0.1, y: 0.3}), clump({x: 0.8, y: 0.4})], text: 'Courses became<br>communities of<br>learners.'}
+        {shapes: [sharing({x: 0.5, y: 0.5})], text: 'We&rsquo;ve seen<br>that people learn<br>by sharing.'}
+        {shapes: [infinity({x: 0.5, y: 0.5})], text: 'Our mission is to<br>connect the world&rsquo;s<br>learners and<br>educators.'}
         {shapes: [
             animated_circle
                 size: 10
-                radius: .06
-                start: {x: .3, y: .5}
-                end: {x: .5, y: .5}
-                dot_radius: .02
+                radius: 0.06
+                start: {x: 0.3, y: 0.5}
+                end: {x: 0.5, y: 0.5}
+                dot_radius: 0.02
                 rotation: -1
             animated_circle
                 size: 10
-                radius: .12
-                start: {x: .7, y: .5}
-                end: {x: .5, y: .5}
-                dot_radius: .03
+                radius: 0.12
+                start: {x: 0.7, y: 0.5}
+                end: {x: 0.5, y: 0.5}
+                dot_radius: 0.03
                 rotation: 1
             point
-                position: {x: .5, y: .5}
-                dot_radius: .03
+                position: {x: 0.5, y: 0.5}
+                dot_radius: 0.03
             ], text: 'We need a name<br>that reflects our<br>ambitions.'}
         {shapes: [
             do tree
             ], text: 'Lore means<br>knowledge shared<br>between people.'}
         {shapes: [
-            clump {x: .5, y: .5}, 42, [225, 15, 23], {constant: .03, variance: 50}, .4, .06
+            clump {x: 0.5, y: 0.5}, 42, [225, 15, 23], {constant: 0.03, variance: 50}, 0.4, 0.06
             ], text: "That&rsquo;s what we<br>are about."}
         {shapes: [
-            clump {x: .5, y: .5}, 42, [225, 15, 23], {constant: .04, variance: 50}, .4, .04, yes, {image: '/microsite_static/lore_logo.png', position: {x: .5, y: .5}, size: .3}, .3
+            clump {x: 0.5, y: 0.5}, 42, [225, 15, 23], {constant: 0.04, variance: 50}, 0.4, 0.04, yes, {image: '/microsite_static/lore_logo.png', position: {x: 0.5, y: 0.5}, size: 0.3}, 0.3
             ], text: ""}
     ]
 
@@ -721,7 +721,7 @@ $ ->
 
         screen.find('.caption').css
             'font-size': Math.min minor_dimension/12, 85
-            left: .1 * minor_dimension
+            left: 0.1 * minor_dimension
 
         screen.find('.smaller').css
             'font-size': Math.min minor_dimension/20, 60
@@ -729,7 +729,7 @@ $ ->
         holder = $ '.holder'
         holder.height page_height * page_count - page_height + browser_height - 100
 
-        logos = [{logo: ck_logo, aspect: 329/380, scale: .15}, {logo: lore_logo, aspect: 1, scale: .3}]
+        logos = [{logo: ck_logo, aspect: 329/380, scale: 0.15}, {logo: lore_logo, aspect: 1, scale: 0.3}]
         for {logo, aspect, scale} in logos
             width = minor_dimension * scale
             logo.css
@@ -779,7 +779,7 @@ $ ->
         for {node, position} in text_blocks
             target = page_height * position - node.height() / 3
             #node.css top: (target - scroll_top) * (target - scroll_top) * (target - scroll_top)
-            diff = (target - scroll_top) * .7 / page_height
+            diff = (target - scroll_top) * 0.7 / page_height
             sign = if diff > 0 then 1 else - 1
             node.css top: diff * diff * sign * page_height + minor_dimension/3
             #node.css top: (target - scroll_top) + page_height/3
@@ -790,17 +790,17 @@ $ ->
     $(window).bind 'mousewheel', (e, delta) ->
         console.log delta
         now = +new Date
-        if now - last_mousewheel < 1500 or Math.abs(delta) < .4
+        if now - last_mousewheel < 1500 or Math.abs(delta) < 0.4
             return
         last_mousewheel = now
 
-        momentum = .8
+        momentum = 0.8
         scroll_top = $(window).scrollTop()
         if (delta) > 0
-            target_page = parseInt(scroll_top/page_height + .5) - 1
+            target_page = parseInt(scroll_top/page_height + 0.5) - 1
         else
-            target_page = parseInt(scroll_top/page_height + .5) + 1
-        #scroll_momentum = Math.max(Math.min(scroll_momentum, .8), -.8)
+            target_page = parseInt(scroll_top/page_height + 0.5) + 1
+        #scroll_momentum = Math.max(Math.min(scroll_momentum, 0.8), -.8)
         last_scroll_time = +new Date
 
     $(window).scroll()
@@ -809,7 +809,7 @@ $ ->
     # Jump to next page with button or keyboard
     next_page_button = screen.find('.next-page').click ->
         scroll_top = $(window).scrollTop()
-        target_page = parseInt(scroll_top/page_height + .5) + 1
+        target_page = parseInt(scroll_top/page_height + 0.5) + 1
         false
 
     first_page_button = screen.find('.first-page').click ->
@@ -818,14 +818,14 @@ $ ->
 
     screen.click ->
         scroll_top = $(window).scrollTop()
-        target_page = parseInt(scroll_top/page_height + .5) + 1
+        target_page = parseInt(scroll_top/page_height + 0.5) + 1
 
     $(document).bind 'keydown', (e) ->
         scroll_top = $(window).scrollTop()
         if e.which in [37, 38]
-            target_page = parseInt(sroll_top/page_height + .5) - 1
+            target_page = parseInt(sroll_top/page_height + 0.5) - 1
         else if e.which in [39, 40, 32, 13, 9]
-            target_page = parseInt(scroll_top/page_height + .5) + 1
+            target_page = parseInt(scroll_top/page_height + 0.5) + 1
         false
 
     # Handle the animation frames
@@ -847,7 +847,7 @@ $ ->
             last_scroll = $(window).scrollTop()
             # Spring physics to bring the scroll position towards a page
             direction = if scroll_momentum > 0 then 1 else -1
-            #target = parseInt(last_scroll/page_height + .5 + (direction * .4))
+            #target = parseInt(last_scroll/page_height + 0.5 + (direction * 0.4))
             distance_to_target = target_page - last_scroll/page_height
 
             sign = scroll_momentum/Math.abs scroll_momentum
@@ -857,7 +857,7 @@ $ ->
             closest_below = parseInt last_scroll/page_height
 
 
-            scroll_momentum += distance_to_target * .08
+            scroll_momentum += distance_to_target * 0.08
 
             if last_below? and last_below isnt closest_below
                 scroll_momentum = 0
