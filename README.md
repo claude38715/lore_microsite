@@ -1,3 +1,4 @@
+Update: Updated to use CoffeeScript idioms courtesy of @michaelficarra - see [#1](https://github.com/coursekit/lore_microsite/pull/1) for a detailed discussion on the various style descisions.
 Lore Microsite
 =============
 A fancy microsite to announce our transition from Coursekit to Lore. View it live at http://lore.com/story
