@@ -177,7 +177,7 @@ class Dot
             height: (t) -> t.radius * scale
             background: (t) ->
                 color = (parseInt c for c in t.color)
-                "rgba(#{color},#{t.opacity})"
+                "rgba(#{color.join ','},#{t.opacity})"
 
         for k, v of compute_inner
             prev = v previous
@@ -199,7 +199,7 @@ class Dot
 
         unless @target.background_image?
             color = (parseInt c for c in @actual.color)
-            node_changes.background = "rgba(#{color},#{@actual.outer_opacity})"
+            node_changes.background = "rgba(#{color.join ','},#{@actual.outer_opacity})"
             node_changes.opacity = 1
             @current_background = null
         else
@@ -835,7 +835,7 @@ $ ->
     last_below = null
     scroll_paused = 0
     last_sign = null
-    requestAnimationFrame do_frame = ->
+    do_frame = ->
         frame_count++
         time = +new Date
         dtim = time - otim
@@ -850,7 +850,7 @@ $ ->
             #target = parseInt(last_scroll/page_height + 0.5 + (direction * 0.4))
             distance_to_target = target_page - last_scroll/page_height
 
-            sign = scroll_momentum/Math.abs scroll_momentum
+            sign = scroll_momentum/(Math.abs scroll_momentum)
             last_sign = sign
 
 
@@ -880,3 +880,5 @@ $ ->
             d.do_frame Math.min browser_height, browser_width
         last_page = current_page
         requestAnimationFrame do_frame
+    requestAnimationFrame do_frame
+
